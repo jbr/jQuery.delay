@@ -5,9 +5,10 @@
  * MIT license
  */
 
-$.fn.delay = function(fn, timeout) {
-  fn_data = 'delay-fn'
-  timeout_data = 'timeout'
+(function($){
+  $.fn.delay = function(fn, timeout) {
+    fn_data = 'delay-fn'
+    timeout_data = 'timeout'
 
     if ($.isFunction(fn)) {
 	item = $(this)
@@ -28,4 +29,5 @@ $.fn.delay = function(fn, timeout) {
 	if ($.isFunction(fn)) { fn.call($(this)) }
     }
     return $(this);
-}
+  }
+})(jQuery);
