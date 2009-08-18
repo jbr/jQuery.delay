@@ -1,3 +1,10 @@
+/*
+ * jQuery Delay Plugin
+ *
+ * (c) 2009 Jacob Rothstein
+ * MIT license
+ */
+
 $.fn.delay = function(fn, timeout) {
   fn_data = 'delay-fn'
   timeout_data = 'timeout'
